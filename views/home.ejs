@@ -1,0 +1,564 @@
+<%- include('include/head.ejs') %>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/side_nav_home.css">
+    <link rel="stylesheet" href="/css/footer_home.css">
+    <link rel="stylesheet" href="/css/transition.css">
+    </head>
+
+    <body>
+        <div id="main-body">
+            <%- include('include/side_nav.ejs') %>
+                <div id="main-container">
+                    <!--row1-->
+
+                    <div class="grid-container">
+                        <h2>Songs Category1</h2>
+                        <% songs1.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration:none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row2-->
+                    <div class="grid-container">
+                        <h2>Songs Category2</h2>
+                        <% songs2.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row3-->
+                    <div class="grid-container">
+                        <h2>Songs Category3</h2>
+                        <% songs3.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row4-->
+                    <div class="grid-container">
+                        <h2>Songs Category4</h2>
+                        <% songs4.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row5-->
+                    <div class="grid-container">
+                        <h2>Songs Category5</h2>
+                        <% songs5.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row6-->
+                    <div class="grid-container">
+                        <h2>Songs Category6</h2>
+                        <% songs6.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row7-->
+                    <div class="grid-container">
+                        <h2>Songs Category7</h2>
+                        <% songs7.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row8-->
+                    <div class="grid-container">
+                        <h2>Songs Category8</h2>
+                        <% songs8.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row9-->
+                    <div class="grid-container">
+                        <h2>Songs Category9</h2>
+                        <% songs9.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row10-->
+                    <div class="grid-container">
+                        <h2>Songs Category10</h2>
+                        <% songs10.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row11-->
+                    <div class="grid-container">
+                        <h2>Songs Category11</h2>
+                        <% songs11.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row12-->
+                    <div class="grid-container">
+                        <h2>Songs Category12</h2>
+                        <% songs12.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row13-->
+                    <div class="grid-container">
+                        <h2>Songs Category13</h2>
+                        <% songs13.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row14-->
+                    <div class="grid-container">
+                        <h2>Songs Category14</h2>
+                        <% songs14.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+                    <!--row15-->
+                    <div class="grid-container">
+                        <h2>Songs Category15</h2>
+                        <% songs15.forEach(song =>{  %>
+                            <a href="/homeSong/<%= song._id %>" style="text-decoration: none">
+                                <div class="grid-item">
+
+                                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+
+                                        <center> <img src="/<%= song.coverPic %>" alt="<%= song.title %>">
+                                            <div class="title">
+                                                <h3>
+                                                    <%= song.title %>
+                                                </h3>
+                                            </div>
+                                            <div class="singer">
+                                                <h4>
+                                                    <%= song.singer %>
+                                                </h4>
+                                            </div>
+                                        </center>
+
+
+
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% }) %>
+
+                                <div>
+                                    <a href="#" style="text-decoration: none; color:white">
+                                        <h3>See all</h3>
+                                    </a>
+                                </div>
+                    </div>
+
+                    <!--footer section-->
+
+                </div>
+                <%-include('include/footer.ejs')%>
+        </div>
+
+
+        <div style="display:<%= display %>">
+            <%- include('include/controller.ejs',{song:songUrl,image:image,title:title,singer:singer}) %>
+        </div>
+        <%- include('include/end.ejs') %>

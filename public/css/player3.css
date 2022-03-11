@@ -1,0 +1,207 @@
+#player {
+    background-color: rgba(97, 94, 94, 0.6);
+    width: 96%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 10fr 10fr 5fr;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#bio {
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    padding: 0.75%
+}
+
+#image {
+    padding-left: 2%
+}
+
+#image img {
+    width: 120px;
+    height: 90pxs;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#title {
+    margin-top: 3.5%;
+}
+
+#title h3,
+#title h4 {
+    margin: 0.5%;
+    margin-top: 1%;
+    width: fit-content;
+    max-width: 170px;
+    overflow-x: hidden;
+    color: white;
+}
+
+#beat {
+    margin-bottom: 1.23%;
+}
+
+.wrapper {
+    width: 150px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: .25%;
+}
+
+.bar {
+    width: 14px;
+    height: 25px;
+    animation-iteration-count: infinite;
+    animation-iteration-function: linear;
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.line1 {
+    background-color: #787878;
+    animation: animate1 1.9s linear infinite;
+    top: 200px;
+    left: 60px;
+}
+
+.line2 {
+    background-color: #787878;
+    animation: animate2 2.1s linear infinite;
+    top: 200px;
+    left: 95px;
+}
+
+.line3 {
+    background-color: #787878;
+    animation: animate3 2.3s linear infinite;
+    top: 200px;
+    left: 130px;
+}
+
+.line4 {
+    background-color: #787878;
+    animation: animate4 1.4s linear infinite;
+    top: 200px;
+    left: 165px;
+}
+
+.line5 {
+    background-color: #787878;
+    animation: animate5 1.7s linear infinite;
+    top: 200px;
+    left: 200px;
+}
+
+.line6 {
+    background-color: #787878;
+    animation: animate6 2.0s linear infinite;
+    top: 200px;
+    left: 235px;
+}
+
+.line7 {
+    background-color: #787878;
+    animation: animate7 1.8s linear infinite;
+    top: 200px;
+    left: 270px;
+}
+
+@keyframes animate1 {
+    50% {
+        background-color: #000;
+        top: 100px;
+        height: 68px;
+    }
+}
+
+@keyframes animate2 {
+    50% {
+        background-color: #000;
+        top: 50px;
+        height: 61.2px;
+    }
+}
+
+@keyframes animate3 {
+    50% {
+        background-color: #000;
+        top: 10px;
+        height: 74px;
+    }
+}
+
+@keyframes animate4 {
+    50% {
+        background-color: #000;
+        top: 100px;
+        height: 47.6px;
+    }
+}
+
+@keyframes animate5 {
+    50% {
+        background-color: #000;
+        top: 50px;
+        height: 54.4px;
+    }
+}
+
+@keyframes animate6 {
+    50% {
+        background-color: #000;
+        top: 150px;
+        height: 37.4px;
+    }
+}
+
+@keyframes animate7 {
+    50% {
+        background-color: #000;
+        top: 50px;
+        height: 47.6px;
+    }
+}
+
+#controls {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    width: fit-content;
+    padding: 0.5%;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.button1 {
+    color: white;
+    font-weight: 400;
+    font-size: 27px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+
+/*
+this class will be applied 
+to shuffle and loop when they will be 
+pressed*/
+
+.button2 {
+    color: rgb(7, 165, 7);
+    font-weight: 400;
+    font-size: 27px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}

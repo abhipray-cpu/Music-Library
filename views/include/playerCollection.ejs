@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/player2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<div id="player">
+    <!--star bio and beat effect if the song is playing-->
+    <div id="bio">
+        <div id="image">
+            <img src="https://i.ytimg.com/vi/dwiaTmTDHWM/maxresdefault.jpg" alt="No make up">
+        </div>
+        <div id="title">
+            <h3>No Make Up</h3>
+            <h4 style="margin-top:1.5%">by: Bilal Saeed</h4>
+        </div>
+        <div id="beat">
+            <div class="wrapper">
+                <div class="line1 bar">
+                </div>
+                <div class="line2 bar">
+                </div>
+                <div class="line3 bar">
+                </div>
+                <div class="line4 bar">
+                </div>
+                <div class="line5 bar">
+                </div>
+                <div class="line6 bar">
+                </div>
+                <div class="line7 bar">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--general control-->
+    <div id="controls">
+        <div id="buttons">
+            <div id="shuffle" class="button">
+                <i class="fa-solid fa-shuffle button1"></i>
+            </div>
+            <div id="prev" class="button">
+                <i class="fa-solid fa-backward-step button1"></i>
+            </div>
+            <div id="play" class="button">
+                <i class="fa-solid fa-play button1"></i>
+                <!--need to hide one of the element based on the state of the player-->
+                <i class="fa-solid fa-pause button1" style="display:none"></i>
+            </div>
+            <div id="next" class="button">
+                <i class="fa-solid fa-forward-step button1"></i>
+            </div>
+            <div id="loop" class="button">
+                <i class="fas fa-repeat button1"></i>
+            </div>
+        </div>
+        <div id="progressBar">
+            <!--in this a jquery based progress bar will be placed on later-->
+        </div>
+    </div>
+    <!--volume control-->
+    <div id="volumeControl">
+        <!--in this a jquery based slider will be placed for controlling the volume-->
+    </div>
+</div>

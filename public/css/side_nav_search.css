@@ -1,0 +1,53 @@
+/* Style the sidebar - fixed full height */
+
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+
+
+/* Style sidebar links */
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(33, 243, 33);
+    display: block;
+    margin-bottom: 40px;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Style links on mouse-over */
+
+.sidebar a:hover {
+    background: linear-gradient( 45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 20px #000;
+}
+
+
+/* Style the main content */
+
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}

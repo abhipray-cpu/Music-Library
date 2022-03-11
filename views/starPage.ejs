@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <% title %>
+    </title>
+    <link rel="stylesheet" href="/css/bio.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+</head>
+
+<body>
+    <div id="container">
+        <!--this will contain the profile-->
+        <div id="row1" style=" background-image: url('/<%= image %>');">
+            <div id="name">
+                <h1>
+                    <%= title %>
+                </h1>
+            </div>
+            <div id="info">
+                <div class="details">
+                    <h2>Songs:
+                        <%= songs.length%>
+                    </h2>
+                </div>
+                <div class="details">
+                    <h2>Plays:
+                        <%= plays%>
+                    </h2>
+                </div>
+                <div class="details">
+                    <h2>Likes:
+                        <%= likes %>
+                    </h2>
+                </div>
+            </div>
+            <div id="top-songs">
+                <!--top 5 songs-->
+                <% if(topSongs.length>0) {%>
+                    <% topSongs.forEach(song =>{  %>
+                        <div class="song">
+                            <div class="topImage">
+                                <img src="/<%= song.coverPic%>" alt="<%= song.title %>">
+                            </div>
+                            <div class="topTitle">
+                                <%= song.title %>
+                            </div>
+                        </div>
+                        <% }) %>
+                            <% } else {%>
+                                <div class="song">
+                                    <div class="topImage">
+                                        <img src="https://www.pinkvilla.com/imageresize/ice-cream-ariana-grande-calls-selena-gomez-ice-queen-after-the-latters-collab-with-blackpink-drops_0.jpg?width=752&format=webp&t=pvorg" alt="">
+                                    </div>
+                                    <div class="topTitle">
+                                        Song1
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="topImage">
+                                        <img src="https://i.ytimg.com/vi/BzE1mX4Px0I/maxresdefault.jpg" alt="">
+                                    </div>
+                                    <div class="topTitle">
+                                        Song1
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="topImage">
+                                        <img src="https://i.ytimg.com/vi/D5drYkLiLI8/maxresdefault.jpg" alt="">
+                                    </div>
+                                    <div class="topTitle">
+                                        Song1
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="topImage">
+                                        <img src="data:image/jpeg;base64,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"
+                                            alt="">
+                                    </div>
+                                    <div class="topTitle">
+                                        Song1
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="topImage">
+                                        <img src="https://i1.sndcdn.com/artworks-m59ZJDa9EItOzvgc-pZ4apw-t500x500.jpg" alt="">
+                                    </div>
+                                    <div class="topTitle">
+                                        Song1
+                                    </div>
+                                </div>
+                                <% } %>
+            </div>
+        </div>
+        <div id="row2">
+            <div class="heading">
+                <div class="Hcol" style="margin-left:8%">Playing</div>
+                <div class="Hcol">Cover</div>
+                <div class="Hcol">Song</div>
+                <div class="Hcol">Plays</div>
+                <div class="Hcol">Likes</div>
+                <div class="Hcol">Duration</div>
+                <div class="Hcol">Like</div>
+
+            </div>
+            <div id="gaane">
+                <% if (songs.length > 0) {%>
+                    <% songs.forEach(song =>{  %>
+                        <div class="audio">
+                            <div class="col1">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="image">
+                                <img src="/<%=song.coverPic %>" alt="<%= song.title%>">
+                            </div>
+                            <div class="title">
+                                <%= song.title%>
+                            </div>
+                            <div class="plays">
+                                <%=song.plays %>Plays</div>
+                            <div class="likes">
+                                <%= song.likes %> Likes</div>
+                            <div class="duration">
+                                <%= song.duration %>
+                            </div>
+                            <div class="like">
+                                <i class="fa-solid fa-heart liked"></i>
+                            </div>
+
+                        </div>
+                        <% }) %>
+                            <% } else { %>
+                                <!--this is the state that will be used for playing song-->
+                                <div class="playing">
+                                    <div class="wrapperL">
+                                        <div class="line1L barL">
+                                        </div>
+                                        <div class="line2L barL">
+                                        </div>
+                                        <div class="line3L barL">
+                                        </div>
+                                        <div class="line4L barL">
+                                        </div>
+                                        <div class="line5L barL">
+                                        </div>
+                                        <div class="line6L barL">
+                                        </div>
+                                        <div class="line7L barL">
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://www.pinkvilla.com/imageresize/ice-cream-ariana-grande-calls-selena-gomez-ice-queen-after-the-latters-collab-with-blackpink-drops_0.jpg?width=752&format=webp&t=pvorg" alt="Song1">
+                                    </div>
+                                    <div class="title">Song1</div>
+                                    <div class="plays">1000 Plays</div>
+                                    <div class="likes">100 Likes</div>
+                                    <div class="duration">3:40</div>
+                                    <div class="like">
+                                        <i class="fa-solid fa-heart liked"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="audio">
+                                    <div class="col1">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://www.pinkvilla.com/imageresize/ice-cream-ariana-grande-calls-selena-gomez-ice-queen-after-the-latters-collab-with-blackpink-drops_0.jpg?width=752&format=webp&t=pvorg" alt="Song1">
+                                    </div>
+                                    <div class="title">Song1</div>
+                                    <div class="plays">1000 Plays</div>
+                                    <div class="likes">100 Likes</div>
+                                    <div class="duration">3:40</div>
+                                    <div class="like">
+                                        <i class="fa-solid fa-heart liked"></i>
+                                    </div>
+
+                                </div>
+                                <div class="audio">
+                                    <div class="col1">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://www.pinkvilla.com/imageresize/ice-cream-ariana-grande-calls-selena-gomez-ice-queen-after-the-latters-collab-with-blackpink-drops_0.jpg?width=752&format=webp&t=pvorg" alt="Song1">
+                                    </div>
+                                    <div class="title">Song1</div>
+                                    <div class="plays">1000 Plays</div>
+                                    <div class="likes">100 Likes</div>
+                                    <div class="duration">3:40</div>
+                                    <div class="like">
+                                        <i class="fa-solid fa-heart liked"></i>
+                                    </div>
+
+                                </div>
+                                <div class="audio">
+                                    <div class="col1">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://www.pinkvilla.com/imageresize/ice-cream-ariana-grande-calls-selena-gomez-ice-queen-after-the-latters-collab-with-blackpink-drops_0.jpg?width=752&format=webp&t=pvorg" alt="Song1">
+                                    </div>
+                                    <div class="title">Song1</div>
+                                    <div class="plays">1000 Plays</div>
+                                    <div class="likes">100 Likes</div>
+                                    <div class="duration">3:40</div>
+                                    <div class="like">
+                                        <i class="fa-solid fa-heart liked"></i>
+                                    </div>
+
+                                </div>
+                                <% } %>
+            </div>
+
+
+
+
+        </div>
+        <div id="row3">
+            <%- include('include/playerStar.ejs') %>
+        </div>
+    </div>
+</body>
+
+</html>

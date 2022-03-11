@@ -1,0 +1,120 @@
+footer {
+    margin-top: 50px;
+    background: linear-gradient( 45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 20px #000;
+    width: 100%;
+}
+
+#row1 {
+    display: grid;
+    grid-template-columns: 30fr 30fr 30fr;
+    margin-bottom: 40px;
+}
+
+#row1 #sec1 {
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+#row1 #sec1 h2 {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+
+#row1 #sec1 h3 {
+    font-size: 30px;
+    color: black;
+}
+
+#row1 #sec1 h3 a {
+    font-size: 30px;
+    text-decoration: none;
+    color: blue;
+}
+
+#row1 #sec2 {
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+#row1 #sec2 h2 {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+
+#row1 #sec2 input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    width: 300px;
+}
+
+#row1 #sec2 input:focus {
+    outline: none !important;
+}
+
+#row1 #sec2 button {
+    border: none;
+    background: transparent;
+}
+
+#row1 #sec3 {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+#row1 #sec3 h3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+#row1 #sec3 h3 a:hover {
+    font-size: 40px;
+}
+
+#row2 {
+    display: grid;
+    grid-template-columns: 30fr 30fr 30fr;
+}
+
+#row2 #organization {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#row2 #organization h3 {
+    text-align: center;
+    color: black;
+}
+
+#row2 #sec1 {
+    margin-left: 120px;
+    margin-right: 20px;
+}
+
+#row2 #sec2 {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#row2 #sec1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#row2 #sec2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    float: left
+}
+
+#row2 #sec2 a:hover,
+#row2 #sec1 a:hover {
+    font-size: 24px;
+}

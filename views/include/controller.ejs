@@ -1,0 +1,115 @@
+<!-- Called of font style  file -->
+
+<link rel="stylesheet" href="/css/Controller.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+
+
+<div id="playerP">
+    <div class="container-audioP" id="row1P">
+        <audio controls loop autoplay id="myAudio">
+                           <source src="<%= song %>" type="audio/ogg">
+                           Your browser dose not Support the audio Tag
+                       </audio>
+    </div>
+    <div id="lowerP">
+        <div id="infoP">
+            <div id="imageP">
+                <img src="/<%= image %>" alt="<%= title %>">
+            </div>
+            <div id="titleP">
+                <h3>
+                    <%= title %>
+                        <span>
+                        <strong>
+                            <h4>
+                                <%= singer %>
+                            </h4>
+                        </strong>
+                    </span>
+                </h3>
+            </div>
+        </div>
+        <div class="container-audioP" id="row2P">
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+            <div class="colum1P">
+                <div class="rowP"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+    var aud = document.getElementById("myAudio");
+    aud.onpause = function() {
+        document.getElementById("row2P").style.display = "none";
+    };
+    aud.onplay = function() {
+        document.getElementById("row2P").style.display = "";
+    };
+</script>

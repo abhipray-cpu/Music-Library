@@ -1,0 +1,127 @@
+footer {
+    margin-top: 50px;
+    background: linear-gradient( 45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px #000;
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+#row1 {
+    display: grid;
+    grid-template-columns: 30fr 30fr 30fr;
+    margin-bottom: 40px;
+}
+
+#row1 #sec1 {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#row1 #sec1 h2 {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+#row1 #sec1 h3 {
+    font-size: 30px;
+    color: white;
+}
+
+#row1 #sec1 h3 a {
+    font-size: 30px;
+    text-decoration: none;
+    color: blue;
+}
+
+#row1 #sec2 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#row1 #sec2 h2 {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+#row1 #sec2 input {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    width: 300px;
+    color: white;
+    margin-top: 20px;
+}
+
+#row1 #sec2 input:focus {
+    outline: none !important;
+}
+
+#row1 #sec2 button {
+    border: none;
+    background: transparent;
+}
+
+#row1 #sec3 {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+#row1 #sec3 h3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+#row1 #sec3 h3 a:hover {
+    font-size: 40px;
+}
+
+#row2 {
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr;
+}
+
+#row2 #organization {
+    margin-left: 50px;
+    width: fit-content;
+}
+
+#row2 #organization h3 {
+    color: white;
+}
+
+#row2 #sec1 {
+    width: fit-content;
+}
+
+#row2 #sec2 {
+    width: fit-content;
+}
+
+#row2 #sec1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+#row2 #sec1 a:hover {
+    font-size: 50px;
+}
+
+#row2 #sec2 h2 {
+    color: white;
+}
+
+#row2 #sec2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    float: left
+}
+
+#row2 #sec2 a:hover {
+    font-size: 24px;
+}

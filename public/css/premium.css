@@ -1,0 +1,163 @@
+body {
+    background: #833ab4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 40fr 40fr;
+}
+
+#formLeft input:-webkit-autofill,
+#formLeft input:-webkit-autofill:hover,
+#formLeft input:-webkit-autofill:focus,
+#formLeft input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+
+#formLeft {
+    margin-top: 50px;
+    background: linear-gradient( 45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 20px #000;
+    width: fit-content;
+    padding: 30px;
+    border: 2ps solid transparent;
+    border-radius: 60px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 69px;
+}
+
+#formLeft input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 300px;
+    font-size: 30px;
+    color: #000;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#formLeft input::placeholder {
+    color: black
+}
+
+#formLeft input:focus {
+    outline: none !important;
+}
+
+#formLeft label {
+    color: black;
+    font-size: 50px;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+
+#formLeft ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+#formLeft button {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 40px;
+    margin-left: 170px;
+    margin-top: 20px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 2px;
+}
+
+#plans {
+    width: 500px;
+    height: 600px;
+    border: 4px solid transparent;
+    margin-left: 200px;
+    margin-top: 100px;
+    overflow-y: auto;
+}
+
+#plans::-webkit-scrollbar {
+    display: none;
+}
+
+#plans .Plan {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background: linear-gradient( 45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(1px);
+    /*increase this blur when the plan will be selected to indicate a selection*/
+    box-shadow: 0 0 20px #000;
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+#plans .Plan li {
+    text-align: start;
+}
+
+#plans .Plan:hover {
+    animation-name: hoverAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes hoverAnimation {
+    from {
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        background: linear-gradient( 45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+        backdrop-filter: blur(1px);
+        /*increase this blur when the plan will be selected to indicate a selection*/
+        box-shadow: 0 0 20px #000;
+        border-top: 2px solid rgba(255, 255, 255, 0.25);
+        border-left: 2px solid rgba(255, 255, 255, 0.2);
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        border-radius: 40px;
+        text-align: center;
+    }
+    to {
+        width: 420px;
+        height: 320px;
+        padding: 25px;
+        background: linear-gradient( 45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+        backdrop-filter: blur(1px);
+        /*increase this blur when the plan will be selected to indicate a selection*/
+        box-shadow: 0 0 30px #000;
+        border-top: 2px solid rgba(255, 255, 255, 0.25);
+        border-left: 2px solid rgba(255, 255, 255, 0.2);
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        border-radius: 40px;
+        text-align: center;
+    }
+}

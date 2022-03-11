@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>
+        <%= pageTitle%>
+    </title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/signup.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="/css/side_nav_login.css">
+    <link rel="stylesheet" href="/css/footer_login.css">
+</head>
+
+<body>
+    <% if(error) {%>
+        <div id="Error">
+            <h5>
+                <%= error.msg %>
+
+            </h5>
+        </div>
+        <% } %>
+            <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+
+                <div class="wrapper wrapper--w780">
+                    <div class="card card-3">
+                        <div class="card-heading"></div>
+                        <div class="card-body">
+                            <h2 class="title">Registration Info</h2>
+                            <form action="/addUser" method="POST">
+                                <input type="hidden" value="<%= csrfToken %>" name="_csrf">
+                                <div class="input-group">
+                                    <input class="input--style-3" type="text" placeholder="Name" name="name" value="<%= name %>">
+                                </div>
+                                <div class="input-group">
+                                    <% if(error.param === 'birthday') { %>
+
+                                        <input class="input--style-error js-datepicker" type="text" placeholder="Birthdate" name="birthday">
+                                        <% } else { %>
+                                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday" value="<%= birthday %>">
+                                            <% } %>
+                                                <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                </div>
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <% if(error.param === 'gender') { %>
+                                            <select name="gender" style="color:red">
+                                        <% } else { %>
+                                            <select name="gender">
+                                            <% } %>
+                                                <option selected="selected">Gender</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Other</option>
+                                                </select>
+                                            <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <% if(error.param === 'email') { %>
+                                        <input class="input--style-error" type="email" placeholder="Email" name="email">
+                                        <% } else { %>
+                                            <input class="input--style-3" type="email" placeholder="Email" name="email" value="<%= email %>">
+                                            <% } %>
+                                </div>
+
+                                <div class="input-group">
+                                    <% if(error.param === 'password') {%>
+                                        <input class="input--style-error" type="password" placeholder="password" name="password">
+                                        <% } else { %>
+                                            <input class="input--style-3" type="password" placeholder="password" name="password">
+                                            <% } %>
+                                </div>
+                                <div class="input-group">
+                                    <% if(error.param === 'password') {%>
+                                        <input class="input--style-error" type="password" placeholder="confirm password" name="confirm">
+                                        <% } else { %>
+                                            <input class="input--style-3" type="password" placeholder="confirm password" name="confirm">
+                                            <% } %>
+                                </div>
+                                <div class="p-t-10">
+                                    <button class="btn btn--pill btn--green" type="submit">Signup</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jquery JS-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <!-- Vendor JS-->
+            <script src="vendor/select2/select2.min.js"></script>
+            <script src="vendor/datepicker/moment.min.js"></script>
+            <script src="vendor/datepicker/daterangepicker.js"></script>
+
+            <!-- Main JS-->
+            <script src="js/global.js"></script>
+            <%- include('include/footer.ejs')%>
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

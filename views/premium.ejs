@@ -1,0 +1,81 @@
+<%- include('include/head.ejs') %>
+    <link rel="stylesheet" href="/css/premium.css">
+    <link rel="stylesheet" href="/css/side_nav_premium.css">
+    <link rel="stylesheet" href="/css/footer_premium.css">
+
+    </head>
+
+    <body>
+        <div id="main-body">
+            <%- include('include/side_nav.ejs')%>
+                <div id="container">
+                    <div id="content">
+                        <!--this section contains the list of all the available plans-->
+                        <section id="plans">
+                            <h2 style="text-align:center">Choose a plan</h2>
+                            <!--this will display a listbox of available plans from which we can then select the plan-->
+                            <% plans.forEach(plan => { %>
+                                <div class='Plan'>
+                                    <h3>
+                                        <%=  plan.plan_name %>
+                                    </h3>
+                                    <h3>
+                                        <%= plan.price %>₹</h3>
+                                    <h3>Plan Includes:</h3>
+                                    <ul>
+                                        <li>
+                                            <%= plan.feature1 %>
+                                        </li>
+                                        <li>
+                                            <%= plan.feature2 %>
+                                        </li>
+                                        <li>
+                                            <%= plan.feature3 %>
+                                        </li>
+                                        <li>
+                                            <%= plan.feature4 %>
+                                        </li>
+                                        <li>
+                                            <%= plan.feature5 %>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <% }) %>
+
+
+                        </section>
+                        <!--this section contains the form for premium-->
+                        <section id="formLeft">
+                            <form action="/premium_activate" method='POST'>
+                                <div>
+                                    <label for="user">Username:</label>
+                                    <input type="text" name="user" id="user" placeholder="Puttanpal">
+                                </div>
+                                <div>
+                                    <label for="passwd">Password:</label>
+                                    <input type="password" name="passwd" id="passwd" placeholder=".........">
+                                </div>
+                                <!--adding payment options-->
+                                <label>Payment options</label>
+                                <ul style="list-style-type: none;">
+                                    <li><a href="#">Payment Option1</a></li>
+                                    <li><a href="#">Payment Option2</a></li>
+                                    <li><a href="#">Payment Option3</a></li>
+                                    <li><a href="#">Payment Option4</a></li>
+                                    <li><a href="#">Payment Option5</a></li>
+                                    <li><a href="#">Payment Option6</a></li>
+
+                                </ul>
+                                <button type="submit">Pay</button>
+                            </form>
+                        </section>
+                    </div>
+
+
+                </div>
+                <!--footer for the page-->
+                <%-include('include/footer.ejs')%>
+        </div>
+
+        <%- include('include/end.ejs') %>

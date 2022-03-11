@@ -1,0 +1,147 @@
+<%- include('include/head.ejs') %>
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="/css/side_nav_search.css">
+    <link rel="stylesheet" href="/css/footer_search.css">
+    <link rel="stylesheet" href="/css/transition.css">
+    </head>
+
+    <body>
+        <div id="main-body">
+            <div class="flexbox" style="margin-bottom: 40px;">
+                <div class="search">
+                    <h1>Search</h1>
+                    <h3>artist,song or podcasts</h3>
+                    <div>
+                        <form action="/searchSong" method="POST">
+                            <input type="text" name='value' id='value' placeholder="Search . . ." required>
+                            <input type="hidden" value="<%= csrfToken %>" name="_csrf">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <%- include('include/side_nav.ejs') %>
+                <div id="main-container">
+                    <!--row1-->
+
+                    <div class="grid-container">
+                        <% row1.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row2-->
+                    <div class="grid-container">
+
+                        <% row2.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row3-->
+                    <div class="grid-container">
+                        <% row3.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row4-->
+                    <div class="grid-container">
+
+                        <% row4.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row5-->
+                    <div class="grid-container">
+
+                        <% row5.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row6-->
+                    <div class="grid-container">
+
+                        <% row6.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row7-->
+                    <div class="grid-container">
+
+                        <% row7.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row8-->
+                    <div class="grid-container">
+
+                        <% row8.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row9-->
+                    <div class="grid-container">
+
+                        <% row9.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                    <!--row10-->
+                    <div class="grid-container">
+
+                        <% row10.forEach(item => { %>
+                            <a href="/collection/<%= item.title %>/<%= item.class %>" style="text-decoration: none;">
+                            <div class="<%= item.class %>"><%= item.title %>
+                            <div class="image"><img src="<%= item.image %>" alt="<%= item.title %>"></div>
+                            
+                            </div>
+                        </a>
+                            <% }) %>
+                    </div>
+                </div>
+                <%- include('include/footer.ejs')%>
+        </div>
+        <%- include('include/end.ejs') %>

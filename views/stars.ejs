@@ -1,0 +1,418 @@
+<%- include('include/head.ejs') %>
+    <link rel="stylesheet" href="/css/stars.css">
+    <link rel="stylesheet" href="/css/side_nav_home.css">
+    <link rel="stylesheet" href="/css/footer_stars.css">
+    <link rel="stylesheet" href="/css/transition.css">
+    </head>
+
+    <body>
+        <div id="main-body">
+            <%- include('include/side_nav.ejs') %>
+                <div id="main-container">
+
+                    <% if(star1.length > 0) {%>
+                        <div class="grid-container">
+                            <% star1.forEach(star => { %>
+                                <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                    <div class="grid-item">
+                                        <div class="col-md-4">
+                                            <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                <div class="profile-name">
+                                                    <%= star.name %>
+                                                </div>
+                                                <div class="profile-overview">
+                                                    <div class="profile-overview">
+                                                        <div class="row text-center">
+
+                                                            <div class="col-xs-4">
+                                                                <h3>Likes</h3>
+                                                                <p>
+                                                                    <%= star.likes %>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-xs-4">
+                                                                <h3>Plays</h3>
+                                                                <p>
+                                                                    <%= star.plays %>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <% }) %>
+                        </div>
+                        <% } %>
+                            <% if(star2.length > 0)  {%>
+                                <div class="grid-container">
+                                    <% star2.forEach(star => { %>
+                                        <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                            <div class="grid-item">
+                                                <div class="col-md-4">
+                                                    <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                        <div class="profile-name">
+                                                            <%= star.name %>
+                                                        </div>
+                                                        <div class="profile-overview">
+                                                            <div class="profile-overview">
+                                                                <div class="row text-center">
+
+                                                                    <div class="col-xs-4">
+                                                                        <h3>Likes</h3>
+                                                                        <p>
+                                                                            <%= star.likes %>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-xs-4">
+                                                                        <h3>Plays</h3>
+                                                                        <p>
+                                                                            <%= star.plays %>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <% }) %>
+                                </div>
+                                <% } %>
+                                    <% if(star3.length > 0) {%>
+                                        <div class="grid-container">
+                                            <% star3.forEach(star => { %>
+                                                <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                                    <div class="grid-item">
+                                                        <div class="col-md-4">
+                                                            <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                                <div class="profile-name">
+                                                                    <%= star.name %>
+                                                                </div>
+                                                                <div class="profile-overview">
+                                                                    <div class="profile-overview">
+                                                                        <div class="row text-center">
+
+                                                                            <div class="col-xs-4">
+                                                                                <h3>Likes</h3>
+                                                                                <p>
+                                                                                    <%= star.likes %>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="col-xs-4">
+                                                                                <h3>Plays</h3>
+                                                                                <p>
+                                                                                    <%= star.plays %>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <% }) %>
+                                        </div>
+                                        <% } %>
+                                            <% if(star4.length > 0) {%>
+                                                <div class="grid-container">
+                                                    <% star4.forEach(star => { %>
+                                                        <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                                            <div class="grid-item">
+                                                                <div class="col-md-4">
+                                                                    <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                                        <div class="profile-name">
+                                                                            <%= star.name %>
+                                                                        </div>
+                                                                        <div class="profile-overview">
+                                                                            <div class="profile-overview">
+                                                                                <div class="row text-center">
+
+                                                                                    <div class="col-xs-4">
+                                                                                        <h3>Likes</h3>
+                                                                                        <p>
+                                                                                            <%= star.likes %>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="col-xs-4">
+                                                                                        <h3>Plays</h3>
+                                                                                        <p>
+                                                                                            <%= star.plays %>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <% }) %>
+                                                </div>
+                                                <% } %>
+                                                    <% if(star5.length > 0) {%>
+                                                        <div class="grid-container">
+                                                            <% star5.forEach(star => { %>
+                                                                <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                                                    <div class="grid-item">
+                                                                        <div class="col-md-4">
+                                                                            <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                                                <div class="profile-name">
+                                                                                    <%= star.name %>
+                                                                                </div>
+                                                                                <div class="profile-overview">
+                                                                                    <div class="profile-overview">
+                                                                                        <div class="row text-center">
+
+                                                                                            <div class="col-xs-4">
+                                                                                                <h3>Likes</h3>
+                                                                                                <p>
+                                                                                                    <%= star.likes %>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="col-xs-4">
+                                                                                                <h3>Plays</h3>
+                                                                                                <p>
+                                                                                                    <%= star.plays %>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                                <% }) %>
+                                                        </div>
+                                                        <% } %>
+                                                            <% if(star6.length > 0) {%>
+                                                                <div class="grid-container">
+                                                                    <% star6.forEach(star => { %>
+                                                                        <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                                                            <div class="grid-item">
+                                                                                <div class="col-md-4">
+                                                                                    <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                                                        <div class="profile-name">
+                                                                                            <%= star.name %>
+                                                                                        </div>
+                                                                                        <div class="profile-overview">
+                                                                                            <div class="profile-overview">
+                                                                                                <div class="row text-center">
+
+                                                                                                    <div class="col-xs-4">
+                                                                                                        <h3>Likes</h3>
+                                                                                                        <p>
+                                                                                                            <%= star.likes %>
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                    <div class="col-xs-4">
+                                                                                                        <h3>Plays</h3>
+                                                                                                        <p>
+                                                                                                            <%= star.plays %>
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                        <% }) %>
+                                                                </div>
+                                                                <% } %>
+                                                                    <% if(star7.length > 0) {%>
+                                                                        <div class="grid-container">
+                                                                            <% star7.forEach(star => { %>
+                                                                                <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                                                                    <div class="grid-item">
+                                                                                        <div class="col-md-4">
+                                                                                            <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                                                                <div class="profile-name">
+                                                                                                    <%= star.name %>
+                                                                                                </div>
+                                                                                                <div class="profile-overview">
+                                                                                                    <div class="profile-overview">
+                                                                                                        <div class="row text-center">
+
+                                                                                                            <div class="col-xs-4">
+                                                                                                                <h3>Likes</h3>
+                                                                                                                <p>
+                                                                                                                    <%= star.likes %>
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                            <div class="col-xs-4">
+                                                                                                                <h3>Plays</h3>
+                                                                                                                <p>
+                                                                                                                    <%= star.plays %>
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <% }) %>
+                                                                        </div>
+                                                                        <% } %>
+                                                                            <% if(star8.length > 0) {%>
+                                                                                <div class="grid-container">
+                                                                                    <% star8.forEach(star => { %>
+                                                                                        <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                                                                            <div class="grid-item">
+                                                                                                <div class="col-md-4">
+                                                                                                    <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                                                                        <div class="profile-name">
+                                                                                                            <%= star.name %>
+                                                                                                        </div>
+                                                                                                        <div class="profile-overview">
+                                                                                                            <div class="profile-overview">
+                                                                                                                <div class="row text-center">
+
+                                                                                                                    <div class="col-xs-4">
+                                                                                                                        <h3>Likes</h3>
+                                                                                                                        <p>
+                                                                                                                            <%= star.likes %>
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-xs-4">
+                                                                                                                        <h3>Plays</h3>
+                                                                                                                        <p>
+                                                                                                                            <%= star.plays %>
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </a>
+                                                                                        <% }) %>
+                                                                                </div>
+                                                                                <% } %>
+                                                                                    <% if(star9.length > 0) {%>
+                                                                                        <div class="grid-container">
+                                                                                            <% star9.forEach(star => { %>
+                                                                                                <a href="/bio/<%= star.name %>" style="text-decoration: none;color:white">
+                                                                                                    <div class="grid-item">
+                                                                                                        <div class="col-md-4">
+                                                                                                            <div class="profile-card-6"><img src="<%= star.image %>" class="img img-responsive">
+                                                                                                                <div class="profile-name">
+                                                                                                                    <%= star.name %>
+                                                                                                                </div>
+                                                                                                                <div class="profile-overview">
+                                                                                                                    <div class="profile-overview">
+                                                                                                                        <div class="row text-center">
+
+                                                                                                                            <div class="col-xs-4">
+                                                                                                                                <h3>Likes</h3>
+                                                                                                                                <p>
+                                                                                                                                    <%= star.likes %>
+                                                                                                                                </p>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-xs-4">
+                                                                                                                                <h3>Plays</h3>
+                                                                                                                                <p>
+                                                                                                                                    <%= star.plays %>
+                                                                                                                                </p>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                                <% }) %>
+                                                                                        </div>
+                                                                                        <% } %>
+                                                                                            <div id="pagination">
+                                                                                                <% if(hasPrevious > 1) { %>
+                                                                                                    <a href="/stars?page=<%= currPage - 1 %>&row=prev">Prev</a>
+
+                                                                                                    <% } %>
+                                                                                                        <% if(pages[0] <= hasNext){ %>
+                                                                                                            <a href="/stars?page=<%= pages[0] %>&row=nan">
+                                                                                                                <%= pages[0] %>
+                                                                                                            </a>
+                                                                                                            <% } %>
+
+
+                                                                                                                <a href="/stars?page=<%= pages[1] %>&row=nan">
+                                                                                                                    <%= pages[1] %>
+                                                                                                                </a>
+
+
+
+                                                                                                                <a href="/stars?page=<%= pages[2] %>&row=nan">
+                                                                                                                    <%= pages[2] %>
+                                                                                                                </a>
+
+
+
+                                                                                                                <a href="/stars?page=<%= pages[3] %>&row=nan">
+                                                                                                                    <%= pages[3] %>
+                                                                                                                </a>
+
+
+
+                                                                                                                <a href="/stars?page=<%= pages[4] %>&row=nan">
+                                                                                                                    <%= pages[4] %>
+                                                                                                                </a>
+
+
+
+                                                                                                                <a href="/stars?page=<%= pages[5] %>&row=nan">
+                                                                                                                    <%= pages[5] %>
+                                                                                                                </a>
+
+
+
+                                                                                                                <a href="/stars?page=<%= pages[6] %>&row=nan">
+                                                                                                                    <%= pages[6] %>
+                                                                                                                </a>
+
+
+                                                                                                                <a href="/stars?page=<%= pages[7] %>&row=nan">
+                                                                                                                    <%= pages[7] %>
+                                                                                                                </a>
+
+
+                                                                                                                <a href="/stars?page=<%= pages[8] %>&row=nan">
+                                                                                                                    <%= pages[8] %>
+                                                                                                                </a>
+
+
+
+                                                                                                                <a href="/stars?page=<%= pages[9] %>&row=nan">
+                                                                                                                    <%= pages[9] %>
+                                                                                                                </a>
+
+
+
+
+                                                                                                                <a href="/stars?page=<%= next %>&row=next">Next</a>
+
+                                                                                            </div>
+
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+        <%- include('include/footer.ejs')%>
+            </div>
+            <%- include('include/end.ejs') %>

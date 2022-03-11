@@ -1,0 +1,423 @@
+html * {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 350px 90px;
+    overflow: auto;
+}
+
+#row1 {
+    height: fit-content;
+    width: 100%;
+}
+
+#name {
+    width: 25%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.image img {
+    width: 80px;
+    height: 50px;
+}
+
+#name h1 {
+    margin-left: 2%;
+    margin-top: 1%;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#info {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 15%;
+    margin-left: 85%
+}
+
+.details h2 {
+    text-align: start;
+    margin-right: 2%;
+    margin-top: 1%;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#top-songs {
+    display: grid;
+    grid-template-columns: repeat(5, 10fr);
+    margin-bottom: 1%;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.song {
+    width: 200px;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.topImage img {
+    width: 90%;
+    height: 140px;
+}
+
+.topTitle {
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 17px;
+}
+
+#row2 {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#gaane {
+    margin-top: 5%;
+}
+
+.audio {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 6%;
+    width: 100%;
+    height: fit-content;
+    max-height: 70px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+}
+
+.heading {
+    margin-top: 2%;
+    margin-bottom: 30px;
+    margin-left: 6%;
+    width: 100%;
+    height: fit-content;
+    max-height: 70px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+}
+
+.Hcol {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.title,
+.plays,
+.likes,
+.duration {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 6%;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+#container,
+#row2 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+#container::-webkit-scrollbar,
+#row2::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.like {
+    margin-top: 4%;
+}
+
+.fa-heart {
+    margin-top: 2.5%;
+}
+
+.liked {
+    color: white;
+    font-size: 18px;
+}
+
+.notLiked {
+    font-size: 18px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+}
+
+.fa-play {
+    color: white;
+    font-size: 24px;
+    margin-top: 3%;
+    margin-left: 12%;
+}
+
+.audio:hover,
+audio {
+    background-color: rgba(250, 250, 250, 0.3);
+}
+
+.playing {
+    background-color: rgba(250, 250, 250, 0.3);
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 6%;
+    width: 100%;
+    height: fit-content;
+    max-height: 70px;
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+}
+
+.wrapperL {
+    width: 100px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.barL {
+    width: 10px;
+    height: 20px;
+    animation-iteration-count: infinite;
+    animation-iteration-function: linear;
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.line1L {
+    background-color: #787878;
+    animation: animate1L 1.9s linear infinite;
+    top: 200px;
+    left: 60px;
+}
+
+.line2L {
+    background-color: #787878;
+    animation: animate2L 2.1s linear infinite;
+    top: 200px;
+    left: 95px;
+}
+
+.line3L {
+    background-color: #787878;
+    animation: animate3L 2.3s linear infinite;
+    top: 200px;
+    left: 130px;
+}
+
+.line4L {
+    background-color: #787878;
+    animation: animate4L 1.4s linear infinite;
+    top: 200px;
+    left: 165px;
+}
+
+.line5L {
+    background-color: #787878;
+    animation: animate5L 1.7s linear infinite;
+    top: 200px;
+    left: 200px;
+}
+
+.line6L {
+    background-color: #787878;
+    animation: animate6L 2.0s linear infinite;
+    top: 200px;
+    left: 235px;
+}
+
+.line7L {
+    background-color: #787878;
+    animation: animate7L 1.8s linear infinite;
+    top: 200px;
+    left: 270px;
+}
+
+@keyframes animate1L {
+    50% {
+        background-color: #000;
+        top: 100px;
+        height: 40px;
+    }
+}
+
+@keyframes animate2L {
+    50% {
+        background-color: #000;
+        top: 50px;
+        height: 36px;
+    }
+}
+
+@keyframes animate3L {
+    50% {
+        background-color: #000;
+        top: 10px;
+        height: 48px;
+    }
+}
+
+@keyframes animate4L {
+    50% {
+        background-color: #000;
+        top: 100px;
+        height: 28px;
+    }
+}
+
+@keyframes animate5L {
+    50% {
+        background-color: #000;
+        top: 50px;
+        height: 32px;
+    }
+}
+
+@keyframes animate6L {
+    50% {
+        background-color: #000;
+        top: 150px;
+        height: 22px;
+    }
+}
+
+@keyframes animate7L {
+    50% {
+        background-color: #000;
+        top: 50px;
+        height: 28px;
+    }
+}
+
+#control {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+body {
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 3s;
+    /* Internet Explorer */
+    -o-animation: fadein 3s;
+    /* Opera < 12.1 */
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#row3 {
+    background-color: rgba(0, 0, 0, 0.6)
+}
