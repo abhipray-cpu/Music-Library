@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
-const MONGO_URI = 'mongodb+srv://puttanpal:puttanpal@cluster0.lnhuw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+require('dotenv').config()
+const MONGO_URI = process.env.MONGO_URI
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const flash = require('connect-flash')
@@ -16,7 +17,7 @@ const Store = new mongoSession({ //this is bacially the storage we use to store 
     })
     //add time out in the sessions 1 week expiry should be good
 app.use(session({ // we are passing a sessions middleware
-    secret: "Jackwa aur jillwa gae upar hillwa panya bhran ke waste jackwa girgawa khopdi phatt gawa", // always make sure this key is a good and strong string
+    secret: process.env.SESSION_SECRET, // always make sure this key is a good and strong string
     resave: false, //this makes sure that our session is not reloaded unncessarily
     saveUninitialized: false, //this too
     store: Store //this is the sessions store we are using to store our sessions information

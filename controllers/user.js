@@ -7,8 +7,8 @@ const { validationResult } = require('express-validator')
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'abhipraydumka33@gmail.com',
-        pass: 'kamalanita1@'
+        user: process.env.USER_EMAIL,
+        pass: process.env.USER_PASSWORD
     },
     tls: {
         rejectUnauthorized: false
@@ -78,7 +78,7 @@ exports.addUser = (req, res, next) => {
                         })
                         const mailOptions = {
                             to: req.body.email,
-                            from: 'abhipraydumka33@gmail.com',
+                            from: process.env.MAIL_FROM,
                             subject: 'Signup confirmation!!!',
                             html: `<h1>Hey user these are your credentials</h1>
                         <ul>
@@ -200,7 +200,7 @@ exports.changePassword = (req, res, next) => {
                     if (matched === true) {
                         let mailOptions = {
                                 to: req.session.email,
-                                from: 'abhipraydumka33@gmail.com',
+                                from: process.env.MAIL_FROM,
                                 subject: "Password Change",
                                 text: "Use the link to change the password if not sent by you \n Then sorry my friend you are fucked",
                                 html: `<h1>Use this link to change the password</h1>
